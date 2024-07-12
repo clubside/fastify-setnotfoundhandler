@@ -13,7 +13,7 @@ This is a simple repo to show a bug in [Fastify](https://fastify.dev/)'s `setNot
 
 ## Example Console Error
 
-```json
+```js
 {
   debug: 'buildPageInfo',
   session: undefined,
