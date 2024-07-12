@@ -1,0 +1,214 @@
+html {
+	color-scheme: light dark;
+}
+
+body {
+	font-family: 'Inter Tight', sans-serif;
+	font-optical-sizing: auto;
+	font-size: 1rem;
+	font-weight: 400;
+	color: black;
+	background-color: white;
+	width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Roboto Slab', serif;
+	font-optical-sizing: auto;
+	text-wrap: balance;
+	margin: 0.5rem 0;
+}
+
+h1 {
+	font-weight: 900;
+	font-size: 2em;
+}
+
+h2 {
+	font-weight: 800;
+	font-size: 1.5em;
+}
+
+h3 {
+	font-weight: 700;
+	font-size: 1.17em;
+}
+
+h4 {
+	font-weight: 600;
+	font-size: 1em;
+}
+
+a {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+strong {
+	font-weight: 700;
+}
+
+em {
+	font-style: italic;
+}
+
+header {
+	width: calc(100vw - 10px);
+	height: 128px;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #b6b6b6;
+	backdrop-filter: blur(5px);
+	padding-left: 10px;
+}
+
+header nav {
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5rem 1rem;
+	background-color: rgb(0 0 0 / 50%);
+	border-radius: 0.5rem;
+}
+
+header ul {
+	display: flex;
+	gap: 1rem;
+	color: white;
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+header li {
+	line-height: 1;
+}
+
+header li.current-page {
+	color: white;
+	cursor: default;
+	padding: .5rem 1rem;
+}
+
+header a {
+	text-decoration: none;
+	color: white;
+}
+
+header li a {
+	padding: .5rem 1rem;
+	border-radius: 0.5rem;
+}
+
+header li a:hover {
+	background: white;
+	color: black;
+}
+
+main {
+	width: 100%;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+}
+
+main h1 {
+	font-size: clamp(3rem, 12.625vw + 0.475rem, 15.625rem);
+}
+
+main div.paragraph {
+	text-align: center;
+	font-size: clamp(1rem, 1vw + 0.8rem, 2rem);
+	line-height: 1.5;
+}
+
+main div.paragraph pre {
+	display: inline-block;
+	font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+	padding: .2em .4em;
+    margin: 0;
+    font-size: 85%;
+    white-space: break-spaces;
+    background-color: #afb8c133;
+    border-radius: 6px;
+}
+
+.home {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.home img {
+	height: 48px;
+}
+
+.logged-in {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.avatar {
+	height: 48px;
+}
+
+.login-button {
+	align-items: center;
+	background-color: #fff;
+	border-radius: .5rem;
+	color: #000;
+	cursor: pointer;
+	display: flex;
+	font-size: 1.2rem;
+	font-weight: 500;
+	gap: .4rem;
+	justify-content: center;
+	padding: .5rem 1rem;
+	transition: all .2s;
+}
+
+.login-button:hover {
+	box-shadow: -.3rem .3rem #fcd373;
+    transform: translateX(.3rem) translateY(-.3rem);
+}
+
+.menu {
+	display: none;
+}
+
+.menu img {
+	height: 36px;
+}
+
+form {
+	display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgb(17 17 26 / 10%) 0 1px 0, rgb(17 17 26 / 10%) 0 8px 24px, rgb(17 17 26 / 10%) 0 16px 48px;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.user-logout {
+	margin: 1rem 0;
+	font-size: clamp(1.5rem, 1.5vw + 1.2rem, 3rem);
+	text-underline-offset: 1rem;
+}
